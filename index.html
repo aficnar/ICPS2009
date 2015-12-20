@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>ICPS2009, Split</title>
+<script type="text/javascript">
+// Thanks to JavaScriptKit.com (http://www.javascriptkit.com) for help with this script. --Star96
+var baseopacity=0
+function showtext(objekt){
+textcontainerobj=document.getElementById(objekt)
+browserdetect=textcontainerobj.filters? "ie" : typeof textcontainerobj.style.MozOpacity=="string"? "mozilla" : ""
+instantset(baseopacity)
+highlighting=setInterval("gradualfade(textcontainerobj)",100);
+}
+function pocetna(objekt){
+textcontainerobj=document.getElementById(objekt)
+browserdetect=textcontainerobj.filters? "ie" : typeof textcontainerobj.style.MozOpacity=="string"? "mozilla" : ""
+instantset(baseopacity)
+}
+
+function instantset(degree){
+if (browserdetect=="mozilla")
+textcontainerobj.style.MozOpacity=degree/100
+else if (browserdetect=="ie")
+textcontainerobj.filters.alpha.opacity=degree
+else if (document.getElementById && baseopacity==0)
+document.getElementById("tabledescription").innerHTML=""
+}
+
+function gradualfade(cur2){
+if (browserdetect=="mozilla" && cur2.style.MozOpacity<1)
+cur2.style.MozOpacity=Math.min(parseFloat(cur2.style.MozOpacity)+0.1, 0.99)
+else if (browserdetect=="ie" && cur2.filters.alpha.opacity<100)
+cur2.filters.alpha.opacity+=20
+else if (window.highlighting)
+clearInterval(highlighting)
+}
+
+</script>
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script language="JavaScript">
+
+function odbroji()
+{
+var now = new Date();
+var then = new Date("August 10, 2009 09:00:00 GMT+1");
+var gap = then.getTime() - now.getTime();
+dana=Math.floor(gap / (1000 * 60 * 60 * 24));
+sati = Math.floor((gap / (1000 * 60 * 60 ))-(dana*24));
+minuta=Math.floor((gap / (1000 * 60 ))-(24*60*dana)-(sati*60));
+sekundi=Math.floor((gap / 1000)-(dana*24*60*60)-(sati*60*60)-(minuta*60));
+document.getElementById("countdown").innerHTML ='See you in Split in ' + dana + ' days, ';
+document.getElementById("countdown").innerHTML += sati + ' hours, ' ;
+document.getElementById("countdown").innerHTML += minuta + ' minutes and ';
+document.getElementById("countdown").innerHTML += sekundi + ' seconds!';
+setTimeout('odbroji();', 100);
+}
+
+</script>
+<link href="stil.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style8 {color: #990000}
+-->
+</style>
+</head>
+
+<body onload="showtext('dobrodosli');MM_preloadImages('images/zgrada_main_r2_c4_press.jpg','images/zgrada_main_r2_c6_press.jpg','images/zgrada_main_r2_c8_press.jpg','images/zgrada_main_r4_c2_press.jpg','images/zgrada_main_r4_c4_press.jpg','images/zgrada_main_r4_c6_press.jpg','images/zgrada_main_r4_c8_press.jpg')">
+<p>
+  <script type="text/JavaScript">
+pocetna('dobrodosli');
+</script>
+</p>
+<table width="100%" border="0" background="images/background_novi.gif">
+  <tr>
+    <td width="10">&nbsp;</td>
+    <td width="200"><img src="images/logo.gif" width="200" height="200" /></td>
+    <td><div align="left"><img src="images/header_gornji_novi.gif" width="400" height="200" /></div></td>
+    <td width="350"><table width="338" border="0" cellpadding="1" cellspacing="3">
+      <tr>
+        <td width="80">&nbsp;</td>
+        <td width="80"><a href="sponsors.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image711','','images/zgrada_main_r2_c4_press.jpg',1)"><img src="images/zgrada_main_r2_c4.jpg" name="Image711" width="80" height="80" border="0" id="Image711" /></a></td>
+        <td width="80"><a href="event_overview.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image811','','images/zgrada_main_r2_c6_press.jpg',1)"><img src="images/zgrada_main_r2_c6.jpg" name="Image811" width="80" height="80" border="0" id="Image811" /></a></td>
+        <td width="80"><a href="social_events.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image911','','images/zgrada_main_r2_c8_press.jpg',1)"><img src="images/zgrada_main_r2_c8.jpg" name="Image911" width="80" height="80" border="0" id="Image911" /></a></td>
+      </tr>
+      <tr>
+        <td><a href="plenary_and_invited_speakers.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1011','','images/zgrada_main_r4_c2_press.jpg',1)"><img src="images/zgrada_main_r4_c2.jpg" name="Image1011" width="80" height="80" border="0" id="Image1011" /></a></td>
+        <td><a href="registration.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1111','','images/zgrada_main_r4_c4_press.jpg',1)"><img src="images/zgrada_main_r4_c4.jpg" name="Image1111" width="80" height="80" border="0" id="Image1111" /></a></td>
+        <td><a href="accomodation.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1211','','images/zgrada_main_r4_c6_press.jpg',1)"><img src="images/zgrada_main_r4_c6.jpg" name="Image1211" width="80" height="80" border="0" id="Image1211" /></a></td>
+        <td><a href="about_us.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1311','','images/zgrada_main_r4_c8_press.jpg',1)"><img src="images/zgrada_main_r4_c8.jpg" name="Image1311" width="80" height="80" border="0" id="Image1311" /></a></td>
+      </tr>
+    </table></td>
+    <td width="10">&nbsp;</td>
+  </tr>
+</table>
+<br />
+<br>
+</p>
+<table id="dobrodosli" width="994" border="0" background="images/welcome.gif">
+  <tr> 
+    <td width="140">&nbsp;</td>
+    <td width="810"><br /> <br /> <br /></td>
+  </tr>
+  <tr> 
+    <td height="348">&nbsp;</td>
+    <td>Welcome to the website of ICPS 2009, XXIV International Conference of 
+      Physics Students! 
+      <p>ICPS is an annual conference of the International Association of Physics 
+        Students (IAPS), organised in 2009 by Student Section of the Croatian 
+        Physical Society. It will take place in Split, Croatia, August 10 - 18.</p>
+      <p>This year&#8217;s ICPS is the 24th in a row, and aims at being the best 
+        one you ever had. We would like to welcome you to Split, the most beautiful 
+        city on the Dalmatian coast. Boasting its rich cultural and historical 
+        heritage as well as sunny beaches, it is our country&#8217;s prime tourist 
+        destination, throughout the year. As you might already know, Split became 
+        an important and famous city 17 centuries ago, during the Roman Empire. 
+        From that time there are many archaeological sites, well-preserved buildings 
+        and much more. We hope you will have enough time to explore Split thouroughly. 
+        Today it is one of Croatia&#8217;s liveliest cities, which is why we decided 
+        it was the right place for the conference.</p>
+      <p> This year we are expecting around 500 participants from all over the 
+        globe, presenting many cultures but also a wide variety of scientific 
+        research ranging from the largest to the smallest scales, from fundamental 
+        research to technology and even educational and popular science. We are 
+        honoured to present the invited speakers from Croatia and abroad, and 
+        hope that you will attend their lectures in great numbers. Also, there 
+        will be a round table on the topic of physics education where you can 
+        contribute. Our social programme will consist mainly of parties the typical 
+        Croatian way. We won&#8217;t tell you what that&#8217;s like - it&#8217;s 
+        up to you to experience it. Have fun, present your work and meet many 
+        new friends and colleagues!</p>
+      <p>Feel free to explore this site and do not hesitate to contact us on <a href="mailto:icps2009@fizika.org">icps2009@fizika.org</a> 
+        with whatever questions you may have. </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="994" border="0">
+  <tr> 
+    <td width="69">&nbsp;</td>
+    <td colspan="2"><img src="images/videos.gif" width="270" height="50" /></td>
+    <td colspan="2"><img src="images/press.gif" width="270" height="50" /></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td width="72" valign="top">&nbsp;</td>
+    <td width="377" valign="top">Video recordings of all the guest lectures, round 
+      table and the opening and closing ceremonies will be available here soon. 
+      These were recorded and live streamed during the conference by <a href="http://www.crostream.net/" target="_blank">CroStream</a>.</td>
+    <td width="72" valign="top">&nbsp;</td>
+    <td width="387" rowspan="2" valign="top">Here you can download various excerpts 
+      from press that reported on ICPS2009. <ul>
+        <li><a href="press/dnevnik.avi">Dnevnik</a> <span class="malitext"> <font color="#000000">(Croatian 
+          prime time news)</font> [avi, 6.5 MB]</span></li>
+        <li><a href="press/sd.pdf">Slobodna Dalmacija</a> <span class="malitext"><font color="#000000">(in 
+          Croatian)</font> [pdf, 0.3 MB] </span></li>
+        <li><a href="press/novi_list.pdf">Novi List</a> <span class="malitext"><font color="#000000">(in 
+          Croatian)</font> [pdf, 1.5 MB]</span></li>
+      </ul></td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table id="dobrodosli" width="950" border="0" background="images/news.gif">
+  <tr> 
+    <td width="140">&nbsp;</td>
+    <td width="810"><br /> <br /> <br /></td>
+  </tr>
+  <tr> 
+    <td height="57">&nbsp;</td>
+    <td><table width="770" border="0">
+        <tr> 
+          <td><img src="images/datum10.jpg" width="100" height="29" /></td>
+          <td colspan="2" class="linkCopy"><img src="images/vijest10.jpg" width="164" height="29" /></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2" >The website of ICPS2009 has been updated for the last 
+            time (at least before the conference) and we filled it with a lot 
+            of useful information, including the Survival Guide, more extensive 
+            FAQ, richer interactive Google map, quick (and useful) facts, invited 
+            speakers information, and more. Try to check as much of this as you 
+            can and see you soon in Split!</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2" class="linkCopy">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td><img src="images/datum09.jpg" width="100" height="29" /></td>
+          <td colspan="2" class="linkCopy"><img src="images/vijest09.jpg" width="298" height="29" /></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2">The registration for ICPS2009 is now officially closed. 
+            This means that, unfortunately, we will not accept any new registrations 
+            and that we will not approve any pending registrations.</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2" class="linkCopy">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td><img src="images/datum08.jpg" width="100" height="29" /></td>
+          <td colspan="2" class="linkCopy"><img src="images/vijest08.jpg" width="400" height="29" /></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2">In the last couple of days we have experienced some 
+            problems with our official e-mail address, icps2009@hfd.hr (e-mails 
+            sent to this address were constantly bounced). These problems are 
+            due to our ISP and we expect them to be resolved soon. We apologize 
+            for any inconvenience this may have caused.<br />
+            In the meantime, we have established a new e-mail address where you 
+            can send all your questions and comments, until our old address becomes 
+            functional again: <strong><a href="mailto:icps2009@fizika.org">icps2009@fizika.org</a>.</strong> 
+          </td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2" class="linkCopy">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td><img src="images/datum07.jpg" width="100" height="29" /></td>
+          <td colspan="2" class="linkCopy"><img src="images/vijest07.jpg" width="361" height="29" /></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2">ICPS2009 has reached its maximum number of participants. 
+            This means that the approval of both currently pending registrations 
+            and any other future registrations will be possible only in case one 
+            of the accepted participants cancels his / her registration. </td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2" class="linkCopy">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2" class="linkCopy">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td colspan="3" class="link">Older news posts:</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2" class="linkCopy">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td><img src="images/datum06.jpg" width="100" height="29" /></td>
+          <td class="linkCopy"><img src="images/vijest06.jpg" width="258" height="29" /></td>
+          <td width="44" valign="middle"><div align="right"><a href="#" class="manje" onclick="showStuff('news6'); return false;">[show]</a></div></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2"><span id="news6" style="display: none;">The early registration 
+            for ICPS2009 ends today and the late registration will open tomorrow, 
+            02 June 2009. This in particular means that any payment of the conference 
+            fee on or after this date is considered as a late fee payment (180 
+            &euro;). <br />
+            Also, please note that the late registration closes on 28 June 2009, 
+            which means that after this date we will not accept any more applications 
+            to the ICPS or payments of the conference fee. <br>
+            <br>
+            </span></td>
+        </tr>
+        <tr> 
+          <td><img src="images/datum04.jpg" width="100" height="29" /></td>
+          <td class="linkCopy"><img src="images/vijest04.jpg" width="332" height="29" /></td>
+          <td width="44" valign="middle"><div align="right"><a href="#" class="manje" onclick="showStuff('news5'); return false;">[show]</a></div></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2"><span id="news5" style="display: none;">Due to increased 
+            number of registrations for ICPS2009, we have decided to extend the 
+            early registration deadline to <strong>01 June 2009</strong>!<br>
+            <br>
+            </span></td>
+        </tr>
+        <tr> 
+          <td><img src="images/datum05.jpg" width="100" height="29" /></td>
+          <td class="linkCopy"><img src="images/vijest05.jpg" width="443" height="29" /></td>
+          <td width="44" valign="middle"><div align="right"><a href="#" class="manje" onclick="showStuff('news4'); return false;">[show]</a></div></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2"><span id="news4" style="display: none;">Following is 
+            some information for ICPS2009 participants from Croatia on how to 
+            make a payment of the ICPS2009 conference fee:<br />
+            S obzirom da kao dr&#158;avljani Republike Hrvatske ne mogu uplatiti 
+            kotizaciju na devizni ra&#269;un HFD-a, molimo sve sudionike ICPS-a 
+            2009 iz Hrvatske da uplate iznos od 1200 kn na &#158;iro ra&#269;un 
+            HFD-a (Zagreba&#269;ka banka d.d., &#158;iro ra&#269;un broj 2360000-1101301202) 
+            s istim pozivom na broj kao i za sudionike iz drugih zemalja.<br>
+            <br>
+            </span></td>
+        </tr>
+        <tr> 
+          <td width="100"><img src="images/datum03.jpg" width="100" height="29" /></td>
+          <td class="linkCopy"><img src="images/vijest03.jpg" width="373" height="29" /></td>
+          <td width="44" valign="middle"><div align="right"><a href="#" class="manje" onclick="showStuff('news3'); return false;">[show]</a></div></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2"><span id="news3" style="display: none;">We are now accepting 
+            conference fee payments! Conference fee can be paid by bank transfer, 
+            and the details necessary for making the payment can be found in the 
+            <a href="registration.php"><em>registration</em></a> section. Credit/debit 
+            card payment option is still not available, but we're working on it; 
+            more information about that at the end of the month. Also, please 
+            note that early and late registration deadlines are the deadlines 
+            for the actual payment of the conference fee. <br>
+            <br>
+            </span></td>
+        </tr>
+        <tr> 
+          <td><img src="images/datum02.jpg" width="100" height="29" /></td>
+          <td><img src="images/vijest02.jpg" width="279" height="29" /></td>
+          <td width="44" valign="middle"><div align="right"><a href="#" class="manje" onclick="showStuff('news2'); return false;">[show]</a></div></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2"><span id="news2" style="display: none;">Early registration 
+            for ICPS2009 is now open! To register for the conference, please proceed 
+            to <a href="registration.php"><em>registration</em></a> section of 
+            the website, where you can read all relevant policies regarding the 
+            registration and payment of the conference fee and from where you 
+            can access the online registration form.<br>
+            <br>
+            </span></td>
+        </tr>
+        <tr> 
+          <td><img src="images/datum_prvi.jpg" width="100" height="29" /></td>
+          <td width="612" valign="middle"><img src="images/proba_news.jpg" width="311" height="29" align="left"/> 
+          </td>
+          <td width="44" valign="middle"><div align="right"><a href="#" class="manje" onclick="showStuff('news1'); return false;">[show]</a></div></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td colspan="2"> <span id="news1" style="display: none;">Early registration 
+            will open on Monday, 09 February 2009. You will be able to register 
+            for the ICPS 2009 conference via online registration form.</span></td>
+        </tr>
+      </table>
+      <p>&nbsp;</p>
+      </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+    <td><div align="center"></div></td>
+  </tr>
+</table>
+
+</body>
+</html>
